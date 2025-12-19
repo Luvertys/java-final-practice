@@ -18,8 +18,7 @@ public class EconomyChart {
         String sql =
                 "SELECT country, economy " +
                         "FROM country " +
-                        "ORDER BY economy DESC " +
-                        "LIMIT 15";
+                        "ORDER BY economy DESC ";
 
         try (Connection conn = Database.connect();
              Statement stmt = conn.createStatement();
